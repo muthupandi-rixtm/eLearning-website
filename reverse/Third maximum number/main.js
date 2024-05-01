@@ -11,8 +11,8 @@ function reverseButton() {
   // console.log(reversed);
 }
 function thirdMaxNumber() {
-  arr = [10, 20, 30];
-  arr1 = arr.sort((a, b) => {
+  arr = [10, 10, 20, 30];
+  arr1 = [...new Set(arr)].sort((a, b) => {
     return a - b;
   });
   console.log(
